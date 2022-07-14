@@ -1,9 +1,9 @@
 package main
 
 import (
-	"GTASAGO/memoryReader"
 	"fmt"
 	. "github.com/0xrawsec/golang-win32/win32"
+	"github.com/xXNurioXx/go-gta-sa-memory-reader/memoryReader"
 )
 
 func main() {
