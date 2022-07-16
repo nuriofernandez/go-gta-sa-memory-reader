@@ -1,9 +1,7 @@
 package gtaMemoryAccessor
 
-import (
-	"github.com/xXNurioXx/go-gta-sa-memory-reader/memoryReader"
-)
+import "github.com/xXNurioXx/go-memory-accessor"
 
 func (g *GtaApi) GetMoney() int {
-	return memoryReader.ReadInt(g.PID, 0xB7CE50)
+	return memoryAccessor.ReadInt(g.PID, 0xB7CE50)
 }

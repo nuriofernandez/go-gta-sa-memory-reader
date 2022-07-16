@@ -5,6 +5,8 @@ github.com/0xrawsec/golang-win32 v1.0.14/go.mod h1:LDGq8VzCwLZccK1qg7oKBc8n5DmPL
 github.com/kr/fs v0.1.0/go.mod h1:FFnZGqtBN9Gxj7eW1uZ42v5BccTP0vu6NEaFoC2HwRg=
 github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pkg/sftp v1.10.0/go.mod h1:NxmoDg/QLVWluQDUYG7XBZTLUpKeFa8e3aMf1BfjyHk=
+github.com/xXNurioXx/go-memory-accessor v0.0.0-20220716022914-df829cc5ed56 h1:fjSMLkJXWMNPQO2nzR5+9DHwABGQfa4n8IbnhodQcdw=
+github.com/xXNurioXx/go-memory-accessor v0.0.0-20220716022914-df829cc5ed56/go.mod h1:tAAQjlD1Hl0PqH4rtBzvj3FlF+aQgBv6Yg9G1kmqb5w=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/crypto v0.0.0-20190621222207-cc06ce4a13d4/go.mod h1:yigFU9vqHzYiE8UmvKecakEJjdnWj3jj499lnFckfCI=
 golang.org/x/net v0.0.0-20190311183353-d8887717615a/go.mod h1:t9HGtf8HONx5eT2rtn7q6eTqICYqUVnKs3thJo3Qplg=

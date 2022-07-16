@@ -1,10 +1,8 @@
 package gtaMemoryAccessor
 
-import (
-	"github.com/xXNurioXx/go-gta-sa-memory-reader/memoryReader"
-)
+import "github.com/xXNurioXx/go-memory-accessor"
 
 func (g *GtaApi) GetPedPositionY() float32 {
 	pedPosition := g.GetPedPosition()
-	return memoryReader.ReadFloat(g.PID, pedPosition+0x34)
+	return memoryAccessor.ReadFloat(g.PID, pedPosition+0x34)
 }

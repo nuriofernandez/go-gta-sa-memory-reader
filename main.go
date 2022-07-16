@@ -4,11 +4,11 @@ import (
 	"fmt"
 	. "github.com/0xrawsec/golang-win32/win32"
 	"github.com/xXNurioXx/go-gta-sa-memory-reader/gtaMemoryAccessor"
-	"github.com/xXNurioXx/go-gta-sa-memory-reader/memoryReader"
+	"github.com/xXNurioXx/go-memory-accessor"
 )
 
 func main() {
-	process := memoryReader.FindProcessByName("gta_sa.exe")
+	process := memoryAccessor.FindProcessByName("gta_sa.exe")
 	pid := DWORD(process.ProcessID)
 
 	gtaApi := gtaMemoryAccessor.GtaApi{PID: pid}
