@@ -2,19 +2,20 @@ package main
 
 import (
 	"fmt"
-	. "github.com/0xrawsec/golang-win32/win32"
-	"github.com/xXNurioXx/go-gta-sa-memory-reader/gtaMemoryAccessor"
-	"github.com/xXNurioXx/go-memory-accessor"
+	"github.com/xXNurioXx/go-gta-sa-memory-reader/gtaSa"
 )
 
 func main() {
-	process := memoryAccessor.FindProcessByName("gta_sa.exe")
-	pid := DWORD(process.ProcessID)
+	gtaSa := new(gtaSa.GtaSa)
+	gtaSa.Hook()
 
-	gtaApi := gtaMemoryAccessor.GtaApi{PID: pid}
-	statusByte := gtaApi.GetPedStatus()
-	money := gtaApi.GetMoney()
+	money := gtaSa.GetMoney()
+	pedLocation := gtaSa.GetPed().GetLocation()
+	vehicleLocation := gtaSa.GetVehicle().GetLocation()
+	pedStatus := gtaSa.GetPed().GetStatus()
 
-	fmt.Println("Ped status: (0=air/water, 1=in vehicle, 2=entering interior, 3=in floor) ->", statusByte)
+	fmt.Println("Ped status ->", pedStatus)
 	fmt.Println("User money is ->", money)
+	fmt.Printf("Ped location is '%f', '%f', '%f'\n", pedLocation.X, pedLocation.Y, pedLocation.Z)
+	fmt.Printf("Vehicle location is '%f', '%f', '%f'\n", vehicleLocation.X, vehicleLocation.Y, vehicleLocation.Z)
 }
