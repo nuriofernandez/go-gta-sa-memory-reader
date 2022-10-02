@@ -1,7 +1,6 @@
 package gtaMemoryAccessor
 
 import (
-	. "github.com/0xrawsec/golang-win32/win32"
 	"github.com/xXNurioXx/go-memory-accessor"
 )
 
