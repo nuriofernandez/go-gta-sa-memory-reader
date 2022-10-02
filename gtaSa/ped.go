@@ -9,7 +9,7 @@ func (gta GtaSa) GetPed() *Ped {
 }
 
 func (ped Ped) GetLocation() Location {
-	gtaApi := ped.gtaSa.gtaApi
+	gtaApi := ped.gtaSa.GtaApi
 
 	return Location{
 		X: gtaApi.GetPedPositionX(),
@@ -19,5 +19,5 @@ func (ped Ped) GetLocation() Location {
 }
 
 func (ped Ped) GetStatus() PedStatus {
-	return PedStatus(ped.gtaSa.gtaApi.GetPedStatus())
+	return PedStatus(ped.gtaSa.GtaApi.GetPedStatus())
 }

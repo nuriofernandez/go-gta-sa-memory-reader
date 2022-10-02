@@ -9,7 +9,7 @@ func (gta GtaSa) GetVehicle() *Vehicle {
 }
 
 func (ped Vehicle) GetLocation() Location {
-	gtaApi := ped.gtaSa.gtaApi
+	gtaApi := ped.gtaSa.GtaApi
 
 	return Location{
 		X: gtaApi.GetPedVehiclePositionX(),

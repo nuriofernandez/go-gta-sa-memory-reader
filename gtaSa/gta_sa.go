@@ -5,5 +5,5 @@ import (
 )
 
 type GtaSa struct {
-	gtaApi gtaMemoryAccessor.GtaApi
+	GtaApi gtaMemoryAccessor.GtaApi
 }

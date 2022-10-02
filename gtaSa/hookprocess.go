@@ -18,7 +18,7 @@ func (gta *GtaSa) Hook() {
 	}
 
 	pid := DWORD(process.ProcessID)
-	gta.gtaApi = gtaMemoryAccessor.GtaApi{PID: pid}
+	gta.GtaApi = gtaMemoryAccessor.GtaApi{PID: pid}
 
 	fmt.Println("Successfully hooked into a running GTA:SA instance.")
 }

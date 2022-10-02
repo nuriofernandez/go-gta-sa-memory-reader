@@ -1,5 +1,5 @@
 package gtaSa
 
 func (gta GtaSa) GetMoney() int {
-	return gta.gtaApi.GetMoney()
+	return gta.GtaApi.GetMoney()
 }
