@@ -17,3 +17,8 @@ func (ped Vehicle) GetLocation() Location {
 		Z: gtaApi.GetPedVehiclePositionZ(),
 	}
 }
+
+func (veh Vehicle) GetHealth() float32 {
+	gtaApi := veh.gtaSa.GtaApi
+	return gtaApi.GetPedVehicleHealth()
+}
